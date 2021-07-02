@@ -1,0 +1,120 @@
+:root {
+    --primary-base-color: #F7941E;
+    --secondory-base-color: #F1F1F2;
+    --third-base-color: #FAFAFA;
+    --primary-font-family: 'Roboto';
+
+    --primary-font-size: 20px;
+    --sub-header-font-size: 18px;
+    --large-header-font-size: 32px;
+    --super-header-font-size: 48px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Tahoma, sans-serif;
+}
+
+header, main, footer {
+    max-width: 1920px;
+    margin: 0 auto;
+} 
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--third-base-color);
+    padding: 27px 0;
+}
+
+nav {
+    padding: 0 34px 0 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: var(--sub-header-font-size);
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation-link {
+    font-family: var(--primary-font-family);
+    font-size: var(--sub-header-font-size);
+    line-height: 22px;
+    display: flex;
+    display: inline;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 31px;
+}
+
+.navigation-link:last-child {
+    margin: 0;
+}
+
+.navigation-link:hover {
+    color: #34547A;
+}
+
+.Gift-Finder-button button  {
+    font-family: var(--primary-font-family);
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FAFAFA;
+    color: var(--primary-base-color);
+    border: 1px solid var(--primary-base-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.Gift-Finder-button button:hover {
+    cursor: pointer;
+    color: #a15407;
+    border: 1px solid #a15407;
+}
+
+@media (max-width: 1440px){
+
+}
+    
+@media (max-width: 768px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .navigation {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 540px){
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .navigation-link {
+        margin-bottom: 15px;
+    }
+}
